@@ -30,6 +30,8 @@ function setup() {
 
   fill(255);
   ellipse(cloudOneX, 50, 80, 40);
+  ellipse(cloudOneX - 40, 100, 60, 20);
+  ellipse(cloudOneX + 20, 150, 40, 10);
   cloudOneX = count % width
 
     fill(255)
