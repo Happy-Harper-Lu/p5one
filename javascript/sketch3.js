@@ -35,9 +35,9 @@ function setup() {
     cloudOneX = count % width
 
     fill("rgb(118,80,72)");
-    rect(40, 270, 15, 50);
+    rect(200, 525, 15, 50);
     fill("green");
-    triangle(25, 270, 45, 240 - frameCount % 2900,70, 270);
+    triangle(280, 525, 206, 450 - frameCount % 2900,130, 525);
 
 
     fill(255)
