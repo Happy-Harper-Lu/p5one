@@ -26,13 +26,19 @@ function setup() {
     triangle(900,500,1200,900,1600,500);
 
     fill('rgb(74, 129, 74)');
-  rect(0,500, 1277, 200);
+    rect(0,500, 1277, 200);
 
-  fill(255);
-  ellipse(cloudOneX, 50, 80, 40);
-  ellipse(cloudOneX - 40, 100, 60, 20);
-  ellipse(cloudOneX + 20, 150, 40, 10);
-  cloudOneX = count % width
+    fill(255);
+    ellipse(cloudOneX, 50, 80, 40);
+    ellipse(cloudOneX - 40, 100, 60, 20);
+    ellipse(cloudOneX + 20, 150, 40, 10);
+    cloudOneX = count % width
+
+    fill("rgb(118,80,72)");
+    rect(40, 270, 15, 50);
+    fill("green");
+    triangle(25, 270, 45, 240 - frameCount % 2900,70, 270);
+
 
     fill(255)
     text(`${mouseX}, ${mouseY}`, 20, 20);
