@@ -1,5 +1,7 @@
 let cloudOneX = 50;
 let count = 0;
+let lineXone = 0;
+let lineYone = 0;
 function setup() {
     createCanvas(1277, 700);
   
@@ -8,6 +10,9 @@ function setup() {
  
     function draw() {
     background('navy');
+
+    stroke("yellow");
+    line(lineXone, lineYone, lineXone + 30, lineYone - 30);  
 
     fill(255);
     stroke(0);
@@ -37,11 +42,13 @@ function setup() {
     fill("rgb(118,80,72)");
     rect(200, 525, 15, 50);
     fill("green");
-    triangle(280, 525, 206, 450 - frameCount % 2900,130, 525);
+    triangle(250, 525, 206, 200 - frameCount % height,160, 525);
 
 
     fill(255)
     text(`${mouseX}, ${mouseY}`, 20, 20);
     count = count + 2;
+    lineXone = random(0, width);
+    lineYone = random(0, height/2); 
     
     }
