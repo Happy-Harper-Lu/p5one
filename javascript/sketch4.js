@@ -28,4 +28,13 @@
     fill(120, 80, 50);
     triangle(200, 700, 450, 250, 300, 700);
 
+    if (sunHeight > 0) {
+    sunHeight -=2;
+    }
+
+    if (sunHeight < 480){
+    redVal += 4;
+    greenVal += 1;
+    }
+
     }
