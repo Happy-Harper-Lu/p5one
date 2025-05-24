@@ -37,4 +37,8 @@
     greenVal += 1;
     }
 
+    if (mouseIsPressed == true && sunHeight === 0) {
+    background(0);
+    }
+
     }
