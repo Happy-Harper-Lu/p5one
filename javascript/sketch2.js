@@ -1,8 +1,13 @@
+count=0;
+WIDTH = 1277;
+HEIGHT=700;
 function setup() {
-    createCanvas(1277, 700);
+    createCanvas(WIDTH, HEIGHT);
   }
   
   function draw() { 
+    count=count+1;
+    if(count%5===0){
     background(135, 206, 235);
     fill("yellow");
     stroke("orange");
@@ -36,11 +41,13 @@ function setup() {
     text("🌷", 1050, 450);
     text("🪷", 1100, 450);
     text("🌻", 1150, 450);
-    text("🦋", mouseX - 20, mouseY);
-    text("🦋", mouseX, mouseY);
-    text("🦋", mouseX - 40, mouseY);
-    text("🦋", mouseX + 40, mouseY);
-    text("🦋", mouseX - 20, mouseY);
-    text("🦋", mouseX + 20, mouseY);
-    text("🦋", mouseX, mouseY);
+    
+    text("🦋", random(0,WIDTH), random(0,HEIGHT));
+    text("🦋", random(0,WIDTH), random(0,HEIGHT));
+    text("🦋", random(0,WIDTH), random(0,HEIGHT));
+    text("🦋", random(0,WIDTH), random(0,HEIGHT));
+    text("🦋", random(0,WIDTH), random(0,HEIGHT));
+    text("🦋", random(0,WIDTH), random(0,HEIGHT));
+    }
+
 }
