@@ -16,7 +16,6 @@
     text('press b to draw with blue.', 20, 140);
     text('press p to draw with purple.', 20, 160);
     text('press P to draw with pink.', 20, 180);
-    text('press e to erase', 20, 200);
     }
     function draw() {
     
@@ -45,9 +44,6 @@
     }
     if(key === 'n'){
     normal = true;
-    }
-    if(key === 'e'){
-    B = 1
     }
     }
 
